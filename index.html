@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b698d3a50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <input type="button" class="butsub" id="fetchusers" value="Fetch Users">
+            <input type="button" class="butsub" id="fetchposts" value="Fetch Posts">
+            <input type="button" class="butsub" id="addposts" value="Add Posts">
+        </div>
+        <div>
+            <input type="text" id="search" placeholder="&#xF002; Type here to search"
+            style="font-family: 'Montserrat', sans-serif, 'Font Awesome 5 Free'" />
+        </div>
+        <div class="output" id="output"></div>
+        <div class="result" id="result"></div>
+
+
+
+        <div class="modal" id="modal">
+           
+           
+            <h3 class="span1">Add Posts</h3>
+
+            <div class="message" id="message">
+                <h3> Post Added</h3>
+            </div>
+
+
+            <form id="addpost" class="input">
+                <div>
+                    <input type="text" class="inputvalue" id="title" placeholder="Title">
+                    <input type="text" class="inputvalue" id="body" placeholder="Body">
+                    <input type="submit" value="Submit" class="butsub" id="submit">
+                </div>
+           </form-->
+
+
+
+
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="modal.js"></script>
+
+</html>
