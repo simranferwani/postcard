@@ -78,13 +78,9 @@ function addpost(e) {
                 
                   `;
 
-        let node = document.createElement("p");                 // Create a <li> node
-        var textnode = document.createTextNode("new user");         // Create a text node
-        node.appendChild(textnode);                              // Append the text to <li>
-        document.getElementById("output").appendChild(node);     // Append <li> to <ul> with id="myList"
-         document.getElementById("output").innerHTML = output;
+       
 
-
+                  document.getElementById("output").innerHTML = output;
             closeModal();
         });
 
