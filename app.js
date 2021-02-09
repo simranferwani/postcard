@@ -44,10 +44,16 @@ function getposts() {
         })
 }
 
+
+
+
+
+
+
+
 function addpost(e) {
     e.preventDefault();
-
-    let title = document.getElementById("title").Value;
+    let title = document.getElementById("title1").value;
     let body = document.getElementById("body").value;
 
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -57,12 +63,33 @@ function addpost(e) {
             'Content-type': 'application/json'
 
         },
-        body: JSON.stringify({ tittle: title, body: body })
+        body: JSON.stringify({ title: title, body: body })
     })
         .then((res) => res.json())
-        .then((data) => console.log(data))
+        .then((data) => {
 
-}
+            let output = ``
+
+            output= `
+                  <div class="card">
+                  <h3>${title}</h3>
+                  <p>${body}<p>
+                   </div>
+                
+                  `;
+
+        let node = document.createElement("p");                 // Create a <li> node
+        var textnode = document.createTextNode("new user");         // Create a text node
+        node.appendChild(textnode);                              // Append the text to <li>
+        document.getElementById("output").appendChild(node);     // Append <li> to <ul> with id="myList"
+         document.getElementById("output").innerHTML = output;
+
+
+            closeModal();
+        });
+
+    }
+
 
 
 

@@ -14,47 +14,50 @@ body{
     
     margin: 30px auto;
     width: 90%;
+   
 }
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    padding: 1rem;
 }
 
 
 .butsub{
-        display: block;
-        width: 145px;
-        height:40px;
-        font-size: 1rem;
-        color:white;
-        border: none;
-        border-radius: 5%;
-        margin: auto;
-        outline: none;
-        cursor: pointer;
+    display: block;
+    width: 145px;
+    height:40px;
+    font-size: 1rem;
+    color:white;
+    border: none;
+    border-radius: 5%;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+    width: 11em;
     }
 
  #fetchposts{
-    box-shadow: 3px 3px 3px 3px rgb(212, 95, 52);
-    background: rgb(212, 95, 52);
+    box-shadow: 3px 3px 3px 3px #ed706b;
+    background: #ed706b;
 }
 #submit{
     box-shadow: 3px 3px 3px 3px rgb(81, 214, 81);
     background: rgb(81, 214, 81);
 }
  #fetchusers{
-    box-shadow: 3px 3px 3px 3px rgb(136, 253, 136);
-    background: rgb(136, 253, 136);
+    box-shadow: 3px 3px 3px 3px   #6ad185;
+    background: #6ad185;
 }
 #addposts{
-    background:rgb(235, 109, 109);
-    box-shadow: 3px 3px 3px 3px rgb(235, 109, 109) ;
+    background:#f19069;
+    box-shadow: 3px 3px 3px 3px #f19069; ;
 }
 .card{
     background: white;
-    border: 1px solid green;
+    border:none;
     width: 300px;
     height: 320px;
     padding: 30px;
@@ -89,6 +92,8 @@ outline: none;
     padding: 3px;
     font-weight: 600;
 }
+
+
 .output
 {
     margin: 40px;
@@ -97,11 +102,16 @@ outline: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-flow: wrap;
+    width: 100%;
+    line-height: 1em;
 }
+
+
+
 .modal{
     display: none;
     position: fixed;
-    top:24%;
+    top:27%;
     left:34%;
     align-content: center; 
     font-family: 'Montserrat', sans-serif;
@@ -114,7 +124,7 @@ outline: none;
     width: 260px;
     height:40px;
     padding-left: .4rem;
-    margin: 1.3rem;
+    margin: 1.0rem;
     padding: 1em;
     padding-left: 1 rem;
     
