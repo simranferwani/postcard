@@ -137,6 +137,7 @@ outline: none;
 }
 
 .message{
+    visibility: hidden;
     display: block;
     width: 265px;
     height:40px ;

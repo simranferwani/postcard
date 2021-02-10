@@ -44,13 +44,6 @@ function getposts() {
         })
 }
 
-
-
-
-
-
-
-
 function addpost(e) {
     e.preventDefault();
     let title = document.getElementById("title1").value;
@@ -78,7 +71,7 @@ function addpost(e) {
                 
                   `;
 
-       
+                  messagevisible();
 
                   document.getElementById("output").innerHTML = output;
             closeModal();
@@ -87,7 +80,16 @@ function addpost(e) {
     }
 
 
-
+    function messagevisible() {
+        message.style.visibility="visible";
+    }
+      // var x = document.getElementById("message");
+        //if (x.innerHTML === "") {
+         // x.innerHTML = "Post Added!";
+        //} else {
+          //x.innerHTML = "";
+        //}
+      //}
 
 
 
